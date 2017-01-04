@@ -50,7 +50,7 @@ class Program():
 
 	def __scrape(self):
 		date_str = self.date.isoformat()
-		front_page_url = "http://airnet.org.au/program/javascriptEmbed.php?station=4&rpid=beat-orgy&jspage=%s__ascending&helperStart=http%%3A%%2F%%2Fwww.rrr.org.au" % date_str
+		front_page_url = "http://airnet.org.au/program/javascriptEmbed.php?station=4&rpid=beat-orgy&view=3&helperStart=http%%3A%%2F%%2Fwww.rrr.org.au&time=%s" % date_str
 		local_filename = "programs/beatorgy/%s.html" % date_str
 		if (os.path.exists(local_filename)):
 			all_songs_html = read_file(local_filename)
